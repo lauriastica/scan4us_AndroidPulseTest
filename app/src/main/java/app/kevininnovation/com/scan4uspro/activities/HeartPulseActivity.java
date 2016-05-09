@@ -91,8 +91,8 @@ public class HeartPulseActivity extends AppCompatActivity {
 
         //camera=Camera.open();
         //comienzo la animacion de las pulsaciones en 20bpm
-        //setBPM(40);
-        //playHeartBeat(40);
+        setBPM(140);
+        playHeartBeat(140);
 
     }
 
@@ -251,7 +251,7 @@ public class HeartPulseActivity extends AppCompatActivity {
 
             long endTime = System.currentTimeMillis();
             double totalTimeInSecs = (endTime - startTime) / 1000d;
-            if (totalTimeInSecs >= 10) {
+            if (totalTimeInSecs >= 15) {
                 double bps = (beats / totalTimeInSecs);
                 int dpm = (int) (bps * 60d);
                 if (dpm < 30 || dpm > 180) {
@@ -362,7 +362,7 @@ public class HeartPulseActivity extends AppCompatActivity {
         new CountDownTimer(15000, 1000) {
 
             public void onTick(long millisUntilFinished) {
-                mTxtVwStopWatch.setText("Pon el dedo en la camara y\n espera : " + (millisUntilFinished) / 1000+" segundos");
+                mTxtVwStopWatch.setText("Pon el dedo en la cámara y\n espera: " + (millisUntilFinished) / 1000+" segundos");
             }
 
             public void onFinish() {

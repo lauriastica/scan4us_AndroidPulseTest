@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="app.kevininnovation.com.scan4uspro.activities.HeartPulseActivity">
 
     <android.support.v7.widget.Toolbar
+        android:layout_marginBottom="80dp"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -60,20 +63,20 @@
         </TextView>
 
         <SurfaceView
-            android:visibility="invisible"
+            android:layout_above="@+id/txtvwStopWatch"
             android:id="@+id/preview"
             android:layout_width="match_parent"
-            android:layout_height="100sp"
-            android:layout_below="@+id/toolbar"
+            android:layout_height="160sp"
            >
         </SurfaceView>
 
+
             <ImageView
-                android:layout_below="@+id/preview"
+                android:layout_below="@+id/toolbar"
                 android:src="@drawable/ic_heart_beat"
                 android:id="@+id/image"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_centerInParent="true"
                 />
 
