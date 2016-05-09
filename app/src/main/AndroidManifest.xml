@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ManagerPhoneActivity" />
+        <activity android:name=".activities.ManagerPhotoActivity" />
         <activity android:name=".activities.HeartPulseActivity"></activity>
     </application>
 

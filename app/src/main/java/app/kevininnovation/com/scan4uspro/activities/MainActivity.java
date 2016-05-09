@@ -5,11 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
 
 import app.kevininnovation.com.scan4uspro.R;
-import app.kevininnovation.com.scan4uspro.activities.HeartPulseActivity;
-import app.kevininnovation.com.scan4uspro.activities.ManagerPhoneActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
 
             case R.id.bton_phone:
-                startActivity(new Intent(getApplicationContext(), ManagerPhoneActivity.class));
+                startActivity(new Intent(getApplicationContext(), ManagerPhotoActivity.class));
                 break;
 
             case R.id.bton_pulse:
